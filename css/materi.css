@@ -18,6 +18,7 @@ body {
   font-family: "poppins", sans-serif;
   background-color: var(--secondary-color);
   color: #fff;
+  /* min-height: 2000px; */
 }
 
 /* navbar */
@@ -125,60 +126,58 @@ img {
 #menu {
   display: none;
 }
- /* section hero */
-.hero {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: right;
-  background-image: url('../img/bg-1.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
-
-.hero::after {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 40%;
-  bottom: 0%;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 8%, rgba(1, 1, 3, 0) 50%);
-}
-
-.hero .content {
-  padding: 1.4rem 4%;
-  max-width: 60rem;
-  text-align: center;
-}
-
-.hero .content h1 {
-  font-size: 5rem;
-  color: var(--secondary-color);
-  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
-  line-height: 1.2;
-}
-
-.hero .content p {
-  font-size: 1.6rem;
-  margin-top: 1rem;
-  line-height: 1.4;
-  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
-}
 
 /* Materi section */
+.materi {
+    padding: 10rem 4% 1.4rem;
+    color: var(--primary-color);
+}
 
 .materi h2 {
-  margin-bottom: 1rem;
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
 }
+
 .materi p {
-  text-align: center;
-  max-width: 30rem;
-  margin: auto;
-  line-height: 1.6;
+    text-align: center;
+    margin: auto;
+    font-size: 1rem;
 }
+
+.materi .row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 20rem;
+    margin-top: 5rem;
+    justify-content: center;
+}
+
+.materi .row .materi-alharus {
+    text-align: center;
+}
+
+.materi .row .materi-alharus img {
+    width: 50%;
+    height: 100%;
+}
+ 
+.materi .row .materi-alharus .materi-judul {
+    margin: 1.8rem auto 0.5rem;
+}
+
+.materi .row .materi-alharus p {
+    font-size: 1.3rem;
+    font-weight: 0.5rem;
+}
+ 
+
+
+
+
+
+
+
 
 
 
@@ -187,10 +186,10 @@ img {
 
 /* footer */
 footer {
-  background-color: #fff;
+  background-color: #a200ff;
   text-align: center;
   padding: 1rem 0 3rem;
-  margin-top: 3rem;
+  margin-top: 10rem;
 }
 
 footer .social {
@@ -227,6 +226,10 @@ footer .credit {
   html {
     font-size: 75%;
   }
+  .materi .row {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
 }
 /* Table */
 @media (max-width: 1024px) {
@@ -267,13 +270,32 @@ footer .credit {
     display: block;
     position: relative;
   }
+  .materi .row {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .materi h2 {
+    margin-top: 2rem;
+  }
+  .materi p {
+    font-size: 1.5rem;
+  }
+  .materi .row .materi-alharus .materi-judul {
+    font-size: 1.5rem;
+  }
+  .materi .row .materi-alharus .materi-deskripsi {
+    font-size: 1.5rem;
+  }
+  footer {
+    font-size: 1.5rem;
+  }
 }
 /* Mobile Phone */
-@media (max-width: 480px) {
+/* max-width original 480px */
+@media (max-width: 500px) {
   html {
     font-size: 55%;
   }
+  .materi .row {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
-
-
-
