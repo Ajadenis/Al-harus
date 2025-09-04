@@ -169,9 +169,34 @@ img {
   text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
 
+.text-bor {
+  background-color: var(--primary-color);
+  border: 5px solid var(--backgrouond-color);
+  border-radius: 1rem;
+  box-shadow: 1px 1px 3px rgba(1,1,3,0.5);
+  font-size: 2.5rem;
+  text-align: center;
+  position: relative;
+  width: 50%;
+  padding: 2rem;
+  margin: auto;
+}
+.text-bor .cta {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  color: var(--backgrouond-color);
+  background-color: var(--secondary-color);
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(1,1,3,0.5);
+}
+
+
 /* Main Section */
 .main {
-  padding: 10rem 4% 1.4rem;
+  padding: 5rem 4% 1.4rem;
   color: var(--backgrouond-color);
 }
 .main h2 {
@@ -217,27 +242,9 @@ img {
 }
 
 
-
-
-/* Materi section */
-.materi h2 {
-  margin-bottom: 1rem;
-}
-.materi p {
-  text-align: center;
-  max-width: 30rem;
-  margin: auto;
-  line-height: 1.6;
-}
-
-
-
-
-
-
 /* footer */
 footer {
-  background-color: #fff;
+  background-color: var(--primary-color);
   text-align: center;
   padding: 1rem 0 3rem;
   margin-top: 3rem;
@@ -248,7 +255,7 @@ footer .social {
 }
 
 footer .social a {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   margin: 1rem;
 }
 
@@ -262,13 +269,12 @@ footer .links {
 }
 
 footer .links a {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   padding: 0.7rem 1rem;
 }
 
 footer .credit {
-  color: var(--primary-color);
-  font-weight: 0.8rem;
+  color: var(--secondary-color);
 }
 
 /* Media Queries */
