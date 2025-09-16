@@ -127,76 +127,51 @@ img {
   display: none;
 }
 
-table,
-tr,
-td {
-  padding-left: 1rem;
-  border: 1px solid black;
-  border-collapse: collapse;
-  height: 75px;
-  font-size: 1.6rem;
-}
-caption {
-  font-size: 2.2rem;
-  margin-bottom: 2rem;
-  font-weight: bold;
-}
-
-/* Madrasah Section */
-.madrasah {
+/* Main Section */
+.main {
   padding: 5rem 4% 1.4rem;
   color: var(--backgrouond-color);
 }
-.madrasah h2 {
+.main h2 {
   font-size: 2.6rem;
   margin-bottom: 3rem;
   margin-top: 5rem;
   text-align: center;
 }
-.madrasah .head-img img {
-  border: 0.5px solid var(--backgrouond-color); /*tinggal japus*/
-  padding-bottom: 5rem;
-  width: 25%;
-  height: 25%;
-  margin: auto;
-  display: block;
-}
-li {
-  margin: 0 1rem;
-  font-size: 1.6rem;
-  font-weight: bold;
-}
-.madrasah p {
-  font-size: 1.6rem;
-  text-indent: 3rem;
-  text-align: justify;
-}
-.madrasah .row {
+.main .row {
   display: flex;
   margin-bottom: 3rem;
 }
-.madrasah .row .madrasah-img {
+.main .row .main-img {
   flex: 1 1 40rem;
 }
-.madrasah .row .madrasah-img img {
+.main .row .main-img img {
   width: 100%;
   height: 100%;
 }
-.madrasah .row .content {
+.main .row .content {
   flex: 1 1 35rem;
   padding: 0 1rem;
 }
-.madrasah h3 {
-  font-size: 2.2rem;
-  margin-bottom: 3rem;
-  margin-top: 5rem;
-  text-align: center;
+.main .row .content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
 }
-.madrasah .row .content p {
+.main .row .content p {
   margin-bottom: 0.8rem;
-  font-size: 1.6rem;
-  text-indent: 3rem;
-  text-align: justify;
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+.main .row .content .cta {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: var(--primary-color);
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
 
 /* footer */
@@ -232,7 +207,6 @@ footer .links a {
 
 footer .credit {
   color: var(--secondary-color);
-  font-weight: 0.8rem;
 }
 
 /* Media Queries */
@@ -240,13 +214,6 @@ footer .credit {
 @media (max-width: 1366px) {
   html {
     font-size: 75%;
-  }
-  .main .head-img img {
-    width: 35%;
-    height: 35%;
-  }
-  .main h2 {
-    margin-top: 6rem;
   }
 }
 /* Table */
@@ -306,13 +273,6 @@ footer .credit {
   .main .row .content p {
     font-size: 1.6rem;
   }
-  .main .head-img img {
-    width: 50%;
-    height: 50%;
-  }
-  .main h2 {
-    margin-top: 8rem;
-  }
 }
 /* Mobile Phone */
 @media (max-width: 480px) {
@@ -321,9 +281,5 @@ footer .credit {
   }
   footer {
     font-size: 1.6rem;
-  }
-  .main .head-img img {
-    width: 50%;
-    height: 50%;
   }
 }
