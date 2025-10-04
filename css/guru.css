@@ -127,75 +127,61 @@ img {
   display: none;
 }
 
+/* Table */
+table {
+  width: 100%;
+}
+.no-otomatis {
+  counter-reset: serial-number;
+}
+.no-otomatis td:first-child:before {
+  counter-increment: serial-number;
+  content: counter(serial-number);
+}
 table,
 tr,
-td {
-  padding-left: 1rem;
+td,
+th {
   border: 1px solid black;
   border-collapse: collapse;
   height: 75px;
   font-size: 1.6rem;
+  text-align: center;
+  padding: 2rem;
+  margin: auto;
+}
+td {
+  text-align: justify;
+}
+.foto-guru {
+  height: auto;
+  width: 250px;
+}
+.foto-guru img {
+  align-items: center;
+  display: block;
+  width: 250px;
+  height: auto;
 }
 caption {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   margin-bottom: 2rem;
-  font-weight: bold;
 }
 
-/* Madrasah Section */
-.madrasah {
-  padding: 5rem 4% 1.4rem;
+/* Guru */
+.guru {
+  padding: 9rem 4% 1.4rem;
   color: var(--backgrouond-color);
 }
-.madrasah h2 {
+.guru h2 {
   font-size: 2.6rem;
-  margin-bottom: 3rem;
-  margin-top: 5rem;
+  margin-bottom: 1rem;
   text-align: center;
 }
-.madrasah .head-img img {
-  padding-bottom: 5rem;
-  width: 25%;
-  height: 25%;
+.guru p {
+  text-align: center;
   margin: auto;
-  display: block;
-}
-li {
-  margin: 0 1rem;
-  font-size: 1.6rem;
-  font-weight: bold;
-}
-.madrasah p {
-  font-size: 1.6rem;
-  text-indent: 3rem;
-  text-align: justify;
-}
-.madrasah .row {
-  display: flex;
-  margin-bottom: 3rem;
-}
-.madrasah .row .madrasah-img {
-  flex: 1 1 40rem;
-}
-.madrasah .row .madrasah-img img {
-  width: 100%;
-  height: 100%;
-}
-.madrasah .row .content {
-  flex: 1 1 35rem;
-  padding: 0 1rem;
-}
-.madrasah h3 {
-  font-size: 2.2rem;
-  margin-bottom: 3rem;
-  margin-top: 5rem;
-  text-align: center;
-}
-.madrasah .row .content p {
-  margin-bottom: 0.8rem;
-  font-size: 1.6rem;
-  text-indent: 3rem;
-  text-align: justify;
+  max-width: 30rem;
 }
 
 /* footer */
@@ -240,13 +226,6 @@ footer .credit {
   html {
     font-size: 75%;
   }
-  .madrasah .head-img img {
-    width: 35%;
-    height: 35%;
-  }
-  .madrasah h2 {
-    margin-top: 6rem;
-  }
 }
 /* Table */
 @media (max-width: 1024px) {
@@ -287,31 +266,6 @@ footer .credit {
     display: block;
     position: relative;
   }
-  .madrasah .row {
-    flex-wrap: wrap;
-  }
-  .madrasah .row .main-img img {
-    height: 24rem;
-    object-fit: cover;
-    object-position: center;
-  }
-  .madrasah .row .content {
-    padding: 0;
-  }
-  .madrasah .row .content h3 {
-    font-size: 2rem;
-    margin-top: 1rem;
-  }
-  .madrasah .row .content p {
-    font-size: 1.6rem;
-  }
-  .madrasah .head-img img {
-    width: 50%;
-    height: 50%;
-  }
-  .madrasah h2 {
-    margin-top: 8rem;
-  }
 }
 /* Mobile Phone */
 @media (max-width: 480px) {
@@ -320,9 +274,5 @@ footer .credit {
   }
   footer {
     font-size: 1.6rem;
-  }
-  .madrasah .head-img img {
-    width: 50%;
-    height: 50%;
   }
 }
