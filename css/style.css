@@ -18,7 +18,7 @@ body {
   font-family: "poppins", sans-serif;
   background-color: var(--secondary-color);
   color: #fff;
- /* min-height: 2000px;*/
+  /* min-height: 2000px;*/
 }
 
 /* navbar */
@@ -126,13 +126,13 @@ img {
 #menu {
   display: none;
 }
- /* section hero */
+/* section hero */
 .hero {
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: right;
-  background-image: url('../img/bg-1.jpg');
+  background-image: url("../img/bg-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -140,13 +140,17 @@ img {
 }
 
 .hero::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   width: 100%;
   height: 40%;
   bottom: 0%;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 8%, rgba(1, 1, 3, 0) 50%);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 8%,
+    rgba(1, 1, 3, 0) 50%
+  );
 }
 
 .hero .content {
@@ -173,7 +177,7 @@ img {
   background-color: var(--primary-color);
   border: 5px solid var(--backgrouond-color);
   border-radius: 1rem;
-  box-shadow: 1px 1px 3px rgba(1,1,3,0.5);
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
   font-size: 2.5rem;
   text-align: center;
   position: relative;
@@ -190,9 +194,8 @@ img {
   color: var(--backgrouond-color);
   background-color: var(--secondary-color);
   border-radius: 0.5rem;
-  box-shadow: 1px 1px 3px rgba(1,1,3,0.5);
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
-
 
 /* Main Section */
 .main {
@@ -238,9 +241,8 @@ img {
   color: #fff;
   background-color: var(--primary-color);
   border-radius: 0.5rem;
-  box-shadow: 1px 1px 3px rgba(1,1,3,0.5);
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
-
 
 /* footer */
 footer {
@@ -259,7 +261,7 @@ footer .social a {
   margin: 1rem;
 }
 
-footer .social a:hover ,
+footer .social a:hover,
 footer .links a:hover {
   color: var(--hover-color);
 }
@@ -332,7 +334,7 @@ footer .credit {
     object-position: center;
   }
   .main .row .content {
-    padding: 0;
+    padding: 1rem;
   }
   .main .row .content h3 {
     font-size: 2rem;
@@ -351,6 +353,3 @@ footer .credit {
     font-size: 1.6rem;
   }
 }
-
-
-
