@@ -1,10 +1,6 @@
 {
   "rewrites": [
     {
-      "source": "/views/madrasah.html",
-      "destination": "/views/madrasah.html"
-    },
-    {
       "source": "/(.*)",
       "destination": "/"
     }
