@@ -39,6 +39,7 @@ body {
 img {
   width: 70px;
   height: 70px;
+  margin-right: 1rem;
 }
 .navbar .navbar-logo {
   display: flex;
@@ -129,60 +130,47 @@ img {
 
 /* Materi section */
 .materi {
-    padding: 10rem 4% 1.4rem;
-    color: var(--primary-color);
+  padding: 10rem 4% 1.4rem;
+  color: var(--primary-color);
 }
 
 .materi h2 {
-    text-align: center;
-    font-size: 2.6rem;
-    margin-bottom: 1rem;
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
 }
 
 .materi p {
-    text-align: center;
-    margin: auto;
-    font-size: 1rem;
+  text-align: center;
+  margin: auto;
+  font-size: 1rem;
 }
 
 .materi .row {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    row-gap: 20rem;
-    margin-top: 5rem;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 20rem;
+  margin-top: 5rem;
+  justify-content: center;
 }
 
 .materi .row .materi-alharus {
-    text-align: center;
+  text-align: center;
 }
 
 .materi .row .materi-alharus img {
-    width: 50%;
-    height: 100%;
+  width: 50%;
+  height: 100%;
 }
- 
+
 .materi .row .materi-alharus .materi-judul {
-    margin: 1.8rem auto 0.5rem;
+  margin: 1.8rem auto 0.5rem;
 }
 
 .materi .row .materi-alharus p {
-    font-size: 1.3rem;
-    font-weight: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 0.5rem;
 }
- 
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* footer */
 footer {
@@ -201,7 +189,7 @@ footer .social a {
   margin: 1rem;
 }
 
-footer .social a:hover ,
+footer .social a:hover,
 footer .links a:hover {
   color: var(--hover-color);
 }
@@ -229,7 +217,6 @@ footer .credit {
   .materi .row {
     grid-template-columns: repeat(4, 1fr);
   }
-  
 }
 /* Table */
 @media (max-width: 1024px) {
