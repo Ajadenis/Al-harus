@@ -139,10 +139,24 @@ img {
   margin-top: 5rem;
   text-align: center;
 }
-.main p {
+.main p,
+ol {
   font-size: 1.6rem;
   text-indent: 3rem;
   text-align: justify;
+}
+.main li,
+ul {
+  font-size: 1.35rem;
+  text-indent: 0.5rem;
+  text-align: justify;
+}
+.main .bold-marker-ol li::marker {
+  font-weight: bold;
+}
+.main .bold-marker-ul {
+  font-size: 1.6rem;
+  list-style-position: inside;
 }
 .main .row {
   display: flex;
@@ -152,12 +166,12 @@ img {
   flex: 1 1 40rem;
 }
 .main .row .main-img img {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
 }
 .main .row .content {
   flex: 1 1 35rem;
-  padding: 0 1rem;
+  padding: 0;
 }
 .main .row .content h3 {
   font-size: 1.8rem;
