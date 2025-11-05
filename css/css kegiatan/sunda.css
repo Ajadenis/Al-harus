@@ -209,6 +209,22 @@ ul {
   display: block;
 }
 
+table,
+tr,
+td,
+th {
+  border: 1px solid black;
+  border-collapse: collapse;
+  height: 75px;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 2rem;
+  margin: auto;
+}
+td {
+  text-align: justify;
+}
+
 /* footer */
 footer {
   background-color: var(--primary-color);
